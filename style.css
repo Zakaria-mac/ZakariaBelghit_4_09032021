@@ -544,7 +544,7 @@ a[data-lightbox]:hover::before {
     height: 50px;
     margin-left: -25px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .9);
     color: #FFF;
     font-weight: 100;
     z-index: 1;
@@ -555,7 +555,7 @@ a[data-lightbox]:hover::before {
 }
 
 a[data-lightbox]:hover img {
-    opacity: 0.6;
+    opacity: 0.4;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
@@ -814,7 +814,7 @@ h4 {
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: none;
 }
 
 .bg-banniere {
