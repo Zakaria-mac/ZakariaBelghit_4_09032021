@@ -275,12 +275,25 @@ a:hover {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
-    padding-left: 0;    
+    padding-left: 0;
+}
+.col-sm-4 a{
+    margin-top: 5%;
+}
+.col-sm-4 ul {
+    list-style-type: none;        
+    padding: 0;
+    margin-left: 5%;
+    margin-top: 25%;
+   
 }
 
 #bloc-1-hero h1 {
@@ -400,6 +413,17 @@ a:hover {
     .nav-center.mini-nav .navbar-toggle {
         float: none;
         margin: 10px auto 0;
+    }
+    .col-sm-4 a {
+        margin-top: 4%;
+    }
+    .col-sm-4 ul {
+        list-style-type: none;        
+        padding: 0;
+        margin-left: 5%;
+        margin-top: 25%;
+        width:100%;
+       
     }
 }
 
@@ -822,7 +846,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -845,6 +869,17 @@ h4 {
     }
     .nav-center.navbar .nav {
         max-width: 100%
+    }
+    .col-sm-4 a {
+        margin-top: 4%;
+    }
+    .col-sm-4 ul {
+        list-style-type: none;        
+        padding: 0;
+        margin-left: 5%;
+        margin-top: 25%;
+        width:100%;
+       
     }
 }
 
@@ -1033,10 +1068,54 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+    .row-no-gutters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    .row-no-gutters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .col-sm-4 a{
+        margin-top: 4%;
+    }
+    .col-sm-4 ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 60%;
+        padding: 0;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    .row-no-gutters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .col-sm-4 a{
+        margin-top: 4%;
+    }
+    .col-sm-4 ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0;
+        margin-left: 4%;
+        margin-top: 2%;
+       
     }
 }
